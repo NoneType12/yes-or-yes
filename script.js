@@ -5,6 +5,7 @@ document.addEventListener("mousemove", ()=>{
     var yes = document.getElementById("yes");
     var no = document.getElementById("no");
     yes.addEventListener("click", ()=>{alert(message)});
+    no.addEventListener("click", alert("Oh...  you... managed to click the \"no\" button... Ok, I guess..."))
     no.addEventListener("mouseover", ()=>{
         yes.innerHTML = "No"; yes.setAttribute("id", "no");
         no.innerHTML = "Yes"; no.setAttribute("id", "yes");
